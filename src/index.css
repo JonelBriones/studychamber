@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+body {
+  background-color: var(--color-endless-white-100);
+  color: var(--color-doorway-slate-800);
+}
+
+@theme {
+  --font-timer: sans-serif;
+  /* endless-white (original = 100) BACKGROUNDS */
+  --color-endless-white-50: #f5f5f4;
+  --color-endless-white-100: #ececea;
+  --color-endless-white-200: #dededa;
+  --color-endless-white-300: #cbcbc6;
+  --color-endless-white-400: #b6b6ae;
+  --color-endless-white-500: #9e9e94;
+  --color-endless-white-600: #848477;
+  --color-endless-white-700: #69695f;
+  --color-endless-white-800: #4f4f48;
+  --color-endless-white-900: #353530;
+
+  /* void-grey (original = 200) EMPTY STATES  */
+  --color-void-grey-50: #f2f2f2;
+  --color-void-grey-100: #e8e8e8;
+  --color-void-grey-200: #d8d8d8;
+  --color-void-grey-300: #c5c5c5;
+  --color-void-grey-400: #afafaf;
+  --color-void-grey-500: #969696;
+  --color-void-grey-600: #7b7b7b;
+  --color-void-grey-700: #626262;
+  --color-void-grey-800: #4a4a4a;
+  --color-void-grey-900: #313131;
+
+  /* horizon-haze (original = 300)  HOVERS, DIVIDERS  */
+  --color-horizon-haze-50: #f5f6f8;
+  --color-horizon-haze-100: #eaedf0;
+  --color-horizon-haze-200: #d8dde2;
+  --color-horizon-haze-300: #bfc7d2;
+  --color-horizon-haze-400: #a5b0bf;
+  --color-horizon-haze-500: #8796ab;
+  --color-horizon-haze-600: #677a93;
+  --color-horizon-haze-700: #536175;
+  --color-horizon-haze-800: #3e4958;
+  --color-horizon-haze-900: #29303b;
+
+  /* hourglass-green (original = 600)  MAIN ACCENT */
+  --color-hourglass-green-50: #f9fbfa;
+  --color-hourglass-green-100: #f3f7f5;
+  --color-hourglass-green-200: #e2ece8;
+  --color-hourglass-green-300: #ccddd5;
+  --color-hourglass-green-400: #b1ccbf;
+  --color-hourglass-green-500: #94b9a7;
+  --color-hourglass-green-600: #70a88d;
+  --color-hourglass-green-700: #568d72;
+  --color-hourglass-green-800: #416b57;
+  --color-hourglass-green-900: #2d4a3c;
+
+  /* dome-gold (original = 500) HIGHLIGHTS */
+  --color-dome-gold-50: #fcfbf8;
+  --color-dome-gold-100: #f8f6f0;
+  --color-dome-gold-200: #f0ebdc;
+  --color-dome-gold-300: #e4dcc0;
+  --color-dome-gold-400: #d7cba2;
+  --color-dome-gold-500: #cebb79;
+  --color-dome-gold-600: #bfa54f;
+  --color-dome-gold-700: #9e883a;
+  --color-dome-gold-800: #78672c;
+  --color-dome-gold-900: #51461e;
+
+  /* roof-pink (original = 400) BREAKS*/
+  --color-roof-pink-50: #fcf8fa;
+  --color-roof-pink-100: #f8f0f4;
+  --color-roof-pink-200: #efdce6;
+  --color-roof-pink-300: #e3c0d3;
+  --color-roof-pink-400: #da9dbe;
+  --color-roof-pink-500: #cc77a5;
+  --color-roof-pink-600: #bc4d89;
+  --color-roof-pink-700: #9a3a6e;
+  --color-roof-pink-800: #742c53;
+  --color-roof-pink-900: #4e1e38;
+
+  /* marble-blue (original = 400) TAGS */
+  --color-marble-blue-50: #f9fbfb;
+  --color-marble-blue-100: #f4f7f8;
+  --color-marble-blue-200: #e2eaec;
+  --color-marble-blue-300: #cbd9dd;
+  --color-marble-blue-400: #aec7ce;
+  --color-marble-blue-500: #8db0ba;
+  --color-marble-blue-600: #6997a4;
+  --color-marble-blue-700: #517b87;
+  --color-marble-blue-800: #3d5d66;
+  --color-marble-blue-900: #293f45;
+
+  /* pillar-periwinkle (original = 500) TAGS */
+  --color-pillar-periwinkle-50: #f9f9fb;
+  --color-pillar-periwinkle-100: #eff1f6;
+  --color-pillar-periwinkle-200: #dde1ea;
+  --color-pillar-periwinkle-300: #c4ccdc;
+  --color-pillar-periwinkle-400: #a8b4cb;
+  --color-pillar-periwinkle-500: #8597bc;
+  --color-pillar-periwinkle-600: #6078a8;
+  --color-pillar-periwinkle-700: #4b5f89;
+  --color-pillar-periwinkle-800: #394867;
+  --color-pillar-periwinkle-900: #263045;
+
+  /* doorway-slate (original = 800) TEXT */
+  --color-doorway-slate-50: #f6f9fa;
+  --color-doorway-slate-100: #ebf1f3;
+  --color-doorway-slate-200: #d7e3e7;
+  --color-doorway-slate-300: #bdd0d7;
+  --color-doorway-slate-400: #a0bcc6;
+  --color-doorway-slate-500: #7fa5b2;
+  --color-doorway-slate-600: #5d8b9b;
+  --color-doorway-slate-700: #4a6e7a;
+  --color-doorway-slate-800: #33525d;
+  --color-doorway-slate-900: #21363d;
+}
