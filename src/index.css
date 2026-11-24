@@ -7,6 +7,9 @@
 body {
   background-color: var(--color-endless-white-100);
   color: var(--color-doorway-slate-800);
+  /* background-image: url("../src/assets/hyperbolic_time_chamber.jpg");
+  background-size: cover;
+  background-position: center; */
 }
 
 @theme {
